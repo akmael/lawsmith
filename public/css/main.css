@@ -17,12 +17,18 @@ body{
   height:100px;
   background-color: #2a2b2c;
   z-index: 100;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
 
 
 }
 #navbar nav{
   display: inline-block;
   float: right;
+  font-family: 'IM Fell French Canon SC', serif;
 }
 #navbar nav a{
   text-decoration: none;
@@ -31,7 +37,7 @@ body{
    margin-right: 30px;
    color: #fff;
    font-weight: 700;
-   font-size: 30px;
+   font-size: 20px;
    -webkit-transition: all 0.3s;
    -moz-transition: all 0.3s;
    -ms-transition: all 0.3s;
@@ -44,7 +50,24 @@ display: inline-block;
  margin-left: 20px;
  font-size: 30px;
  line-height: 50px;
+ -webkit-transition: all 0.3s;
+ -moz-transition: all 0.3s;
+ -ms-transition: all 0.3s;
+ -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
+/*changes*/
+#navbar.smaller{
+    height: 75px;
+}
+#brand.smaller{
+     line-height: 25px;
+     font-size: 40px;
+}
+#navbar.smaller nav a {
+     line-height: 60px;
+}
+
 
 /* ============================================================
   SECTIONS
